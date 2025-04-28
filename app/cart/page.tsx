@@ -45,7 +45,7 @@ const CartPage: React.FC = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
-
+      
       <div className="max-w-6xl mx-auto p-6 mt-4">
         <h1 className="text-3xl font-bold text-gray-800 mb-8 text-left">
           Carrito de Compras
@@ -56,8 +56,8 @@ const CartPage: React.FC = () => {
             Tu carrito está vacío. ¡Agrega algunos productos!
           </div>
         ) : (
-          <div className="flex space-x-8">
-            {/* Productos */}
+          <div className="flex space-x-8 max-md:block">
+
             <div className="flex-2 space-y-6 w-3/4">
               {groupedCart.map((product) => (
                 <div
@@ -90,7 +90,6 @@ const CartPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Botón eliminar */}
                   <button
                     onClick={() => handleRemove(product.id)}
                     className="text-red-600 hover:text-red-800 font-semibold transition-all duration-300"
@@ -115,7 +114,6 @@ const CartPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Resumen de compra */}
             <div className="w-2/5 space-y-6 bg-white p-6 rounded-lg shadow-md flex flex-col justify-between h-full">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Resumen de Compra</h2>
 
@@ -129,7 +127,6 @@ const CartPage: React.FC = () => {
                 <span className="text-lg font-semibold text-pink-600">${total.toFixed(2)}</span>
               </div>
 
-              {/* Cupón de descuento */}
               <div className="mt-4">
                 <label htmlFor="coupon" className="block text-sm font-medium text-gray-700">
                   Cupón de descuento
@@ -142,7 +139,6 @@ const CartPage: React.FC = () => {
                 />
               </div>
 
-              {/* Botón de pagar */}
               <div className="mt-auto">
                 <button
                   onClick={handleProceedToPayment}

@@ -3,9 +3,9 @@ import { FaFacebookF, FaPinterest, FaInstagram, FaTiktok } from "react-icons/fa"
 const Footer: React.FC = () => {
   return (
     <footer className="bg-pink-600 py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 text-gray-100">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 text-gray-100 max-md:px-8">
 
-        <div>
+        <div className="max-md:text-center">
           <h3 className="text-xl font-bold mb-4 uppercase text-white">Acerca</h3>
           <hr className="text-gray-100" />
           <p className="text-sm leading-relaxed mt-4 text-gray-50">
@@ -16,13 +16,13 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Columna Contacto */}
-        <div>
+        <div className="max-md:text-center">
           <h3 className="text-xl font-bold mb-4 uppercase text-white">Contacto</h3>
           <hr className="text-gray-100" />
           <p className="text-sm mb-2 mt-4 text-gray-50">Teléfono: +57 300 6549873</p>
           <p className="text-sm mb-2 text-gray-50">Correo: info@gmail.com</p>
           <p className="text-sm mb-4 text-gray-50">Barranquilla | Colombia.</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 justify-center">
             {/* Íconos Sociales */}
             <a
               href="#"
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Barra Inferior */}
-      <div className="border-t border-gray-100 mt-8 pt-4 text-left text-sm text-gray-100">
+      <div className="border-t border-gray-100 mt-8 pt-4 text-left text-sm text-gray-100 max-md:text-center">
         <span className="ml-6">Copyright 2025 © Julie Boutique S.A</span>
       </div>
     </footer>
