@@ -7,10 +7,7 @@ import { doc, getDoc } from "firebase/firestore";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { FaFacebookF, FaPinterest, FaInstagram, FaTiktok } from "react-icons/fa";
 import { useCart } from "@/app/context/CartContext"; 
 
 interface ProductDetail {
@@ -146,18 +143,34 @@ const ProductDetailPage: React.FC = () => {
 
             <div className="flex items-center space-x-4">
               <span className="text-gray-700 font-semibold">Comparte:</span>
-              <a href="#" className="text-blue-600 hover:underline">
-                <FacebookIcon fontSize="small" />
-              </a>
-              <a href="#" className="text-pink-500 hover:underline">
-                <InstagramIcon fontSize="small" />
-              </a>
-              <a href="#" className="text-red-600 hover:underline">
-                <YouTubeIcon fontSize="small" />
-              </a>
-              <a href="#" className="text-green-500 hover:underline">
-                <WhatsAppIcon fontSize="small" />
-              </a>
+                <a
+                  href="#"
+                  className="text-blue-700 transition"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF size={18} />
+                </a>
+                <a
+                  href="#"
+                  className="text-pink-600 transition"
+                  aria-label="Twitter"
+                >
+                  <FaPinterest size={18} />
+                </a>
+                <a
+                  href="#"
+                  className="text-pink-500 transition"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram size={18} />
+                </a>
+                <a
+                  href="#"
+                  className="text-black transition"
+                  aria-label="Tiktok"
+                >
+                  <FaTiktok size={18} />
+                </a>
             </div>
           </div>
         </section>

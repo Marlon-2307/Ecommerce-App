@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           <p className="text-sm mb-2 mt-4 text-gray-50">Teléfono: +57 300 6549873</p>
           <p className="text-sm mb-2 text-gray-50">Correo: info@gmail.com</p>
           <p className="text-sm mb-4 text-gray-50">Barranquilla | Colombia.</p>
-          <div className="flex space-x-4 justify-center">
+          <div className="flex space-x-4 max-md:justify-center">
             {/* Íconos Sociales */}
             <a
               href="#"
