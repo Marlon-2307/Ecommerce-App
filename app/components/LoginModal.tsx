@@ -136,7 +136,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ onClose }) => {
           onClick={loginGoogle}
           className="w-full bg-gray-100 text-gray-800 py-3 rounded-md shadow-md hover:bg-gray-200 transition mb-4 flex items-center justify-center"
         >
-          <Image src="/logoGoogle.png" alt="Google Icon" width={20} height={20} className="mr-3" />
+          <Image src="/logoGoogle.png" alt="Google Icon" width={20} height={20} className="mr-3" loading="lazy" />
           {isLogin ? 'Iniciar con Google' : 'Registrarse con Google'}
         </button>
 

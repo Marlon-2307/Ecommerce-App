@@ -14,10 +14,10 @@ const AuthForm: React.FC = () => {
     setLoading(true);
     try {
       if (isLogin) {
-        // Login
+
         await signInWithEmailAndPassword(auth, email, password);
       } else {
-        // Registro
+
         await createUserWithEmailAndPassword(auth, email, password);
       }
     } catch (err: any) {

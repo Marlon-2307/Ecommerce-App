@@ -36,6 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           layout="fill"
           objectFit="cover"
           className="object-cover transition-all duration-500 ease-in-out transform hover:scale-105 rounded-md"
+          loading="lazy"
         />
       </div>
 

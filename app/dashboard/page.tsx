@@ -40,6 +40,7 @@ const DashboardPage: React.FC = () => {
             alt="Avatar"
             fill
             className="rounded-full object-cover border-4 border-pink-500 p-1"
+            loading="lazy"
           />
         </div>
 
